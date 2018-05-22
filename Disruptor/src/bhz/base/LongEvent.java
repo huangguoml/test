@@ -14,5 +14,6 @@ public class LongEvent {
     
     public void setTest() {
     	System.out.println("helloword");
+    	System.out.println("oncemore");
     }
 } 
