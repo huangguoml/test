@@ -10,4 +10,9 @@ public class LongEvent {
     public void setValue(long value) { 
         this.value = value; 
     } 
+    
+    
+    public void setTest() {
+    	System.out.println("helloword");
+    }
 } 
