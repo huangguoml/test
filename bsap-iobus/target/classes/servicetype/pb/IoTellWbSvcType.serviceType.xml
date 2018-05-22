@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<serviceType id="IoTellWbSvcType" kind="interface" longname="柜员对外服务接口" package="cn.sunline.ltts.busi.iobus.servicetype.pb" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description><![CDATA[柜员对外服务接口]]></description>
+    <service id="IoTlGetInfo" name="tlGetInfo" longname="获取柜员信息">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_CHAR32" required="false" multi="false" array="false" longname="柜员代码"/>
+            </input>
+            <output asParm="false" packMode="false">
+                <field id="ioTlComp_TELLER_fld" type="IoTellComplexType.IoTlComp_TELLER" required="false" multi="false" array="false" longname="aa"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoTlChkInfo" name="chkTellerInfo" longname="检查柜员合法性">
+        <interface>
+            <input packMode="false">
+                <field id="ioTlChkInfoIn" type="IoTellComplexType.IoTlChkInfo_IN" required="false" multi="false" array="false" longname="柜员合法检查"/>
+            </input>
+            <output asParm="false" packMode="false">
+                <field id="ioTlChkInfoOut" type="IoTellComplexType.IoTlChkInfo_OUT" required="false" multi="false" array="false" longname="柜员输出"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoTlChkRole" name="chkTellRole" longname="柜员权限检查">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员代号" ref="PbDict.Teller.userid"/>
+                <field id="prcsid" type="BaseType.U_PRCSCD" required="false" multi="false" array="false" longname="交易码" ref="PbDict.Teller.prcsid"/>
+            </input>
+            <output asParm="false" packMode="false">
+                <field id="passfg" type="BaseEnumType.E_YES___" required="false" multi="false" array="false" longname="返回检查结果"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoAddTellInfo" name="addTellInfo" longname="添加柜员信息">
+        <interface>
+            <input packMode="false">
+                <field id="tellInput" type="IoTellComplexType.IoTlComp_TELLER" required="false" multi="false" array="false" longname="柜员录入"/>
+            </input>
+            <output asParm="true" packMode="true">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员代码"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoUpTellInfo" name="updTellInfo" longname="柜员注销">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员代号"/>
+            </input>
+            <output asParm="true" packMode="false"/>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoUserSigout" name="upTellUslgst" longname="柜员签退">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员代号"/>
+            </input>
+            <output asParm="true" packMode="false"/>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoResteUslgst" name="upTelluslgst" longname="重置柜员签到状态">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员号"/>
+                <field id="passwd" type="BaseType.U_TRANPW" required="false" multi="false" array="false" longname="密码"/>
+                <field id="pswdfg" type="BaseEnumType.E_YES___" required="false" multi="false" array="false" longname="是否校验密码"/>
+            </input>
+            <output asParm="true" packMode="false"/>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+    <service id="IoselUserInfo" name="selUserInfoList" longname="查询柜员信息记录">
+        <interface>
+            <input packMode="false">
+                <field id="userid" type="BaseType.U_USERID" required="false" multi="false" array="false" longname="柜员"/>
+                <field id="userna" type="BaseType.U_ACCTNA" required="false" multi="false" array="false" longname="柜员姓名"/>
+                <field id="userst" type="BaseEnumType.E_USERST" required="false" multi="false" array="false" longname="柜员状态"/>
+                <field id="pageno" type="long" required="false" multi="false" array="false" longname="页数"/>
+                <field id="recdct" type="long" required="false" multi="false" array="false" longname="每页记录数"/>
+            </input>
+            <output asParm="false" packMode="false">
+                <field id="ioTlUserInfos" type="IoTellComplexType.IoTlUserInfos" required="false" multi="false" array="false" longname="柜员输出"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+</serviceType>

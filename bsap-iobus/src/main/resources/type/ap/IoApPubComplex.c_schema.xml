@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="IoApPubComplex" package="cn.sunline.ltts.busi.iobus.type" longname="基础平台通用对象" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <complexType id="KnpSvcxCt" longname="业务服务实现定义表复合类型" dict="false" abstract="false" introduct="false">
+        <element id="svtpid" longname="业务服务类型ID" type="BaseType.U_CHAR80" ref="BaseDict.Comm.svtpid" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="svimky" longname="业务服务实现关键字" type="BaseType.U_CHAR80" ref="BaseDict.Comm.svimky" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="svimid" longname="业务服务实现ID" type="BaseType.U_CHAR80" ref="BaseDict.Comm.svimid" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="remark" longname="备注信息" type="BaseType.U_LONGDS" ref="BaseDict.Comm.remark" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+    </complexType>
+</schema>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="IoCompPbBranch" package="cn.sunline.ltts.busi.iobus.type" longname="机构共用复核类型" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <complexType id="PbBranchUpLow" longname="机构上下级" dict="false" abstract="false" introduct="false">
+        <element id="uppebr" longname="上级机构" type="BaseType.U_BRCHNO" ref="PbDict.Brch.uppebr" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="lowebr" longname="下级机构" type="BaseType.U_BRCHNO" ref="PbDict.Brch.lowebr" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+    </complexType>
+</schema>

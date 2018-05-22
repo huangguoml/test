@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<serviceType id="IoPbCommSvr" kind="business" longname="公共服务" package="cn.sunline.ltts.busi.iobus.servicetype.pb" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description><![CDATA[公共服务]]></description>
+    <service id="genMDSFileList" name="genMDSFileList" longname="生成并上传MDS文件接口">
+        <interface>
+            <input packMode="false">
+                <field id="lstrdt" type="string" required="false" multi="false" array="false" longname="上次交易日期"/>
+            </input>
+            <output asParm="true" packMode="false"/>
+            <property packMode="false"/>
+            <printer packMode="false"/>
+        </interface>
+    </service>
+</serviceType>
