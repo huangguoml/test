@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="DemoTable" package="cn.sunline.edsp.demo.test.tables" longname="表结构" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <table id="kapp_demo_custinfo" name="kapp_demo_custinfo" longname="客户信息表" virtual="false" abstract="false">
+        <fields>
+            <field id="custid" longname="客户号" type="BasicType.U_CUSTID" ref="Dict.CustInfo.custid" primarykey="false" final="false" nullable="false" identity="false" allowSubType="true"/>
+            <field id="custname" longname="客户姓名" type="BasicType.U_CUSTNAME" ref="Dict.CustInfo.custname" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="idcardno" longname="身份证号码" type="BasicType.U_IDCARDNO" ref="Dict.CustInfo.idcardno" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="telenum" longname="电话号码" type="BasicType.U_TELENUM" ref="Dict.CustInfo.telenum" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="addr" longname="住址" type="BasicType.U_ADDR" ref="Dict.CustInfo.addr" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="busistatus" longname="业务状态" type="BasicType.U_BUSISTATUS" ref="Dict.CustInfo.busistatus" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="custserialnum" longname="客户业务流水号" type="BasicType.U_SERIALNUM" ref="Dict.CustInfo.custserialnum" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <ddls/>
+        <odbindexes>
+            <index id="ci_odb1" type="unique" fields="custid" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="custinfo_db1" type="primarykey" fields="custid">
+                <ddls/>
+            </index>
+        </indexes>
+    </table>
+    <table id="kapp_demo_accountinfo" name="kapp_demo_accountinfo" longname="账户信息表" virtual="false" extension="DemoTable.kapp_common" abstract="false">
+        <fields>
+            <field id="accountno" longname="账号" type="BasicType.U_ACCOUNTNO" ref="Dict.AccountInfo.accountno" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="custid" longname="客户号" type="BasicType.U_CUSTID" ref="Dict.CustInfo.custid" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="pwd" longname="密码" type="BasicType.U_PWD" ref="Dict.AccountInfo.pwd" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="opentdate" longname="开户日期" type="BasicType.U_OPENDATE" ref="Dict.AccountInfo.opentdate" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="closedate" longname="销户日期" type="BasicType.U_CLOSEDATE" ref="Dict.AccountInfo.closedate" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="accountstatus" longname="账户状态" type="AtEnumType.E_ACCOUNTSTATUS" ref="Dict.AccountInfo.accountstatus" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="busistatus" longname="业务状态" type="BasicType.U_BUSISTATUS" ref="Dict.CustInfo.busistatus" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="accountserialnum" longname="账户业务流水号" type="BasicType.U_BUSISTATUS" ref="Dict.AccountInfo.accountserialnum" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <ddls/>
+        <odbindexes>
+            <index id="at_odb1" type="unique" fields="accountno" operate="selectOne deleteOne updateOne"/>
+        </odbindexes>
+        <indexes>
+            <index id="accountnoinfo_db1" type="primarykey" fields="accountno">
+                <ddls/>
+            </index>
+        </indexes>
+    </table>
+    <table id="kapp_common" name="kapp_common" longname="公共字段表" virtual="false" abstract="true">
+        <fields>
+            <field id="waiterno" longname="业务员编号" type="BasicType.U_WAITERID" ref="Dict.Common.waiterno" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <ddls/>
+        <odbindexes/>
+        <indexes/>
+    </table>
+</schema>

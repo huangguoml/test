@@ -1,0 +1,12 @@
+{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1553366778,
+		"idcardno":"00000000000000",
+		"addr":"深圳龙岗",
+		"custname":"酒剑仙"
+	},
+	"sys":{
+		"BizSrvId":"CustInfo.createCustInfo"
+	}
+}

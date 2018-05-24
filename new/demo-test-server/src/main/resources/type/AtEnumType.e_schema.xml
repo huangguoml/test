@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="AtEnumType" package="cn.sunline.edsp.demo.type" longname="基础枚举类型" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <restrictionType id="E_ACCOUNTSTATUS" longname="账户状态" base="string" maxLength="2">
+        <enumeration id="normal" value="0" longname="正常状态"/>
+        <enumeration id="freeze" value="1" longname="冻结状态"/>
+        <enumeration id="close" value="2" longname="销户"/>
+    </restrictionType>
+    <restrictionType id="E_TRADESTATUS" longname="交易状态" base="string" maxLength="10">
+        <enumeration id="success" value="SUCCESS" longname="交易成功"/>
+        <enumeration id="fail" value="FAIL" longname="交易失败"/>
+    </restrictionType>
+</schema>

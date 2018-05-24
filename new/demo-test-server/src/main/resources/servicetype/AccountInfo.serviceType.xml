@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<serviceType id="AccountInfo" kind="business" longname="账户服务" package="cn.sunline.edsp.demo.test.servicetype" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <service id="createAccountInfo" name="createAccountInfo" longname="创建账户信息">
+        <interface>
+            <input packMode="true">
+                <field id="custid" type="BasicType.U_CUSTID" required="false" multi="false" array="false" longname="客户号" ref="Dict.CustInfo.custid"/>
+                <field id="pwd" type="BasicType.U_PWD" required="false" multi="false" array="false" longname="密码" ref="Dict.AccountInfo.pwd"/>
+                <field id="opentdate" type="BasicType.U_OPENDATE" required="false" multi="false" array="false" longname="开户日期" ref="Dict.AccountInfo.opentdate"/>
+                <field id="closedate" type="BasicType.U_CLOSEDATE" required="false" multi="false" array="false" longname="销户日期" ref="Dict.AccountInfo.closedate"/>
+                <field id="accountstatus" type="AtEnumType.E_ACCOUNTSTATUS" required="false" multi="false" array="false" longname="账户状态" ref="Dict.AccountInfo.accountstatus"/>
+                <field id="waiterno" type="BasicType.U_WAITERID" required="false" multi="false" array="false" longname="业务员编号" ref="Dict.Common.waiterno"/>
+                <field id="busistatus" type="BasicType.U_BUSISTATUS" required="false" multi="false" array="false" longname="业务状态" ref="Dict.CustInfo.busistatus"/>
+            </input>
+            <output asParm="true" packMode="true">
+                <field id="accountno" type="BasicType.U_ACCOUNTNO" required="false" multi="false" array="false" longname="账号" ref="Dict.AccountInfo.accountno"/>
+                <field id="accountstatus" type="AtEnumType.E_ACCOUNTSTATUS" required="false" multi="false" array="false" longname="账户状态" ref="Dict.AccountInfo.accountstatus"/>
+                <field id="accountserialnum" type="BasicType.U_BUSISTATUS" required="false" multi="false" array="false" longname="账户业务流水号" ref="Dict.AccountInfo.accountserialnum"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="true"/>
+        </interface>
+    </service>
+</serviceType>

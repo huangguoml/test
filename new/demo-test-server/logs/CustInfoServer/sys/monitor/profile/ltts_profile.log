@@ -1,0 +1,6 @@
+[PROF ][10:58:28,176][edsp-thread-1][ ][ ][ ][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][服务[CustInfo.createCustInfo]处理总耗时[0.527000] [0.00] [0.00] [0.00] [0.00]: ]
+[PROF ][15:04:48,714][edsp-thread-1][ ][ ][ ][demo001][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][交易[demo001]处理总耗时[0.553000] [0.00] [0.00] [0.00] [0.00]: ]
+[PROF ][15:13:09,163][edsp-thread-1][ ][ ][ ][demo001][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][交易[demo001]处理总耗时[5.526000] [0.00] [0.00] [0.00] [0.00]: ]
+[PROF ][15:13:42,111][edsp-thread-2][ ][ ][ ][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][服务[CustInfo.createCustInfo]处理总耗时[0.094000] [0.00] [0.00] [0.00] [0.00]: ]
+[PROF ][15:18:16,204][edsp-thread-1][ ][ ][ ][demo001][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][交易[demo001]处理总耗时[0.559000] [0.00] [0.00] [0.00] [0.00]: ]
+[PROF ][15:18:45,953][edsp-thread-2][ ][ ][ ][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:133][服务[CustInfo.createCustInfo]处理总耗时[0.096000] [0.00] [0.00] [0.00] [0.00]: ]

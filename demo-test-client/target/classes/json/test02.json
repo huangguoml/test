@@ -1,0 +1,12 @@
+﻿{
+	"input":{
+		"busistatus":"normal",
+		"telenum":15073311371,
+		"idcardno":"00000000000000",
+		"addr":"汨罗江畔",
+		"custname":"酒中仙"
+	},
+	"sys":{
+		"BizSrvId":"CustInfo.createCustInfo"
+	}
+}

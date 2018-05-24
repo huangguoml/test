@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin id="ApltPlugin" displayName="平台aplt项目插件" activator="cn.sun.edsp.plugin.ApltPlugin" order="2000" enable="true" failOnInitError="true" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <extension-points/>
+    <extensions>
+        <extension id="registry.impl" name="服务注册管理扩展实现" point="service.registry" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.ServiceRegistryManagerImpl</clazzImpl>
+        </extension>
+        <extension id="callback.impl" name="联机回调掉点扩展实现" point="online.callback" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.TransactionProcessCallbackImpl</clazzImpl>
+        </extension>
+        <extension id="subSystemManager.impl" name="子系统编管理号扩展实现" point="rpc_common.subSystemManager" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.SubSystemManagerImpl</clazzImpl>
+        </extension>
+        <extension id="process.impl" name="服务扩展点扩展实现" point="service.process" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.ServiceProcessPointExtensionImpl</clazzImpl>
+        </extension>
+        <extension id="dao.process.impl" name="DAO处理点扩展实现" point="core.dao.callback" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.EntityDaoProcessCallBackImpl</clazzImpl>
+        </extension>
+        <extension id="rpc_inbound.adapterPackData.impl" name="报文转换扩展实现" point="rpc_inbound.adapterPackData" enable="true" singleton="true" errorProcessMode="throwError">
+            <clazzImpl>cn.sunline.edsp.online.callback.AdapterPackDataImpl</clazzImpl>
+        </extension>
+    </extensions>
+    <components/>
+</plugin>

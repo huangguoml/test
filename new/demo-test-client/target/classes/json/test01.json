@@ -1,0 +1,17 @@
+{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1553366778,
+		"pwd":"123456",
+		"idcardno":"00000000000000",
+		"waiterno":"007",
+		"closedate":"20661331",
+		"opentdate":"20180131",
+		"addr":"深圳龙岗",
+		"accountstatus":"0",
+		"custname":"酒剑仙"
+	},
+	"sys":{
+		"prcscd":"demo001"
+	}
+}

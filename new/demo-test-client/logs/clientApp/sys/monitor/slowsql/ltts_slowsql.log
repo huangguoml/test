@@ -1,0 +1,8 @@
+[WARN ] [14:55:31,666][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[644]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [14:59:16,533][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[564]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:04:42,779][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[617]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:05:13,397][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[711]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:12:58,027][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[702]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:13:36,887][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[697]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:18:09,759][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[615]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]
+[WARN ] [15:18:40,998][main][ ][ ][ ][ ][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:466][当前执行sql的耗时[703]超过慢sql时间阀值[100],[FRWDB]SQL[KSysOnlTable.ksys_tabctl.Entity.selectAll][null][0-10000]RowCount=0]

@@ -1,0 +1,95 @@
+[DEBUG][11:14:26,296][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:282][DB-1[getConnection]]
+[SQL  ][11:14:26,301][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select 1]
+[SQL  ][11:14:26,303][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select zxtongbh, waibfwma, waibcjma, ywfwbdid, fuwumosh, txxybzhi, yunxzxbz, neibfwma, miaosxxi, fuwuleix from ksys_fwcjxx where waibfwma='CI0001' and waibcjma='01']
+[SQLIF][11:14:26,306][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[4][FRWDB]SQL[KsysSvcDefine.ksys_fwcjxx.Entity.selectByIndex_odb_uidx1][{waibcjma=01, waibfwma=CI0001}][0-10000]RowCount=1]
+[INFO ][11:14:26,306][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:188][报文接入--->[REQ][{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1550299884,
+		"idcardno":"481874613146",
+		"addr":"深圳",
+		"custname":"李逍遥"
+	},
+	"sys":{
+		"prcscd":"aplt001"
+	}
+}]]
+[WARN ][11:14:26,317][edsp-thread-1][ ][cn.sunline.ltts.base.constant.ConstantValueManager:35][can't find constant value mappings file: [constant_mappings_extension.properties]]
+[WARN ][11:14:26,320][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[84826912795184339749717309911186]消费端流水[84826912795184339749717309911186]是否为空，所以在此生成默认流水值[84826912795184339749717309911186]以免上送的流水为空]
+[DEBUG][11:14:26,329][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:571][DB-1[BeginTransaction]]
+[SQL  ][11:14:26,334][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select controllerid, modelid, servicename, servicetype, isregistmessage, maxruntimeinms, isreadisland, isrunnable, loglevel, propagation, isregistclientmessage, isnamemapping, timeoutconfirmcount from ksys_service_controller where controllerid='aplt001']
+[SQLIF][11:14:26,335][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[2][FRWDB]SQL[KSysService.ksys_service_controller.Entity.selectByIndex_odbindex1][{controllerid=aplt001}][0-10000]RowCount=0]
+[DEBUG][11:14:26,336][edsp-thread-1][ ][cn.sunline.ltts.plugin.online.facade.OnlineFacade:269][timeout=[0]]
+[INFO ][11:14:26,541][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:101][[RES][{"sys":{"pckgsq":"1517368466337","erortx":"交易成功","erorcd":"AAAAAAAAAA","status":"S"},"output":{"custid":"0001517368466498","busistatus":"normal","custserialnum":"busi1517368466498"},"printer":{}}]]
+[WARN ][11:14:26,545][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[96989255925906714035884299866307]消费端流水[96989255925906714035884299866307]是否为空，所以在此生成默认流水值[96989255925906714035884299866307]以免上送的流水为空]
+[DEBUG][11:16:21,253][edsp-thread-2][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:282][DB-2[getConnection]]
+[SQL  ][11:16:21,254][edsp-thread-2][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][3. select 1]
+[SQL  ][11:16:21,256][edsp-thread-2][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][3. select zxtongbh, waibfwma, waibcjma, ywfwbdid, fuwumosh, txxybzhi, yunxzxbz, neibfwma, miaosxxi, fuwuleix from ksys_fwcjxx where waibfwma='CI0001' and waibcjma='01']
+[SQLIF][11:16:21,258][edsp-thread-2][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[3][FRWDB]SQL[KsysSvcDefine.ksys_fwcjxx.Entity.selectByIndex_odb_uidx1][{waibcjma=01, waibfwma=CI0001}][0-10000]RowCount=1]
+[INFO ][11:16:21,258][edsp-thread-2][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:188][报文接入--->[REQ][{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1550299884,
+		"idcardno":"481874613146",
+		"addr":"深圳",
+		"custname":"李逍遥"
+	},
+	"sys":{
+		"prcscd":"aplt001"
+	}
+}]]
+[WARN ][11:16:21,259][edsp-thread-2][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[56340646416366225811207546825943]消费端流水[56340646416366225811207546825943]是否为空，所以在此生成默认流水值[56340646416366225811207546825943]以免上送的流水为空]
+[DEBUG][11:16:21,260][edsp-thread-2][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:571][DB-2[BeginTransaction]]
+[SQL  ][11:16:21,263][edsp-thread-2][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][3. select controllerid, modelid, servicename, servicetype, isregistmessage, maxruntimeinms, isreadisland, isrunnable, loglevel, propagation, isregistclientmessage, isnamemapping, timeoutconfirmcount from ksys_service_controller where controllerid='aplt001']
+[SQLIF][11:16:21,265][edsp-thread-2][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[3][FRWDB]SQL[KSysService.ksys_service_controller.Entity.selectByIndex_odbindex1][{controllerid=aplt001}][0-10000]RowCount=0]
+[DEBUG][11:16:21,266][edsp-thread-2][ ][cn.sunline.ltts.plugin.online.facade.OnlineFacade:269][timeout=[0]]
+[INFO ][11:16:21,292][edsp-thread-2][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:101][[RES][{"sys":{"pckgsq":"1517368581266","erortx":"交易成功","erorcd":"AAAAAAAAAA","status":"S"},"output":{"custid":"0001517368581282","busistatus":"normal","custserialnum":"busi1517368581282"},"printer":{}}]]
+[WARN ][11:16:21,293][edsp-thread-2][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[05517159338575745642667223717960]消费端流水[05517159338575745642667223717960]是否为空，所以在此生成默认流水值[05517159338575745642667223717960]以免上送的流水为空]
+[DEBUG][11:19:28,094][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:282][DB-1[getConnection]]
+[SQL  ][11:19:28,100][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select 1]
+[SQL  ][11:19:28,102][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select zxtongbh, waibfwma, waibcjma, ywfwbdid, fuwumosh, txxybzhi, yunxzxbz, neibfwma, miaosxxi, fuwuleix from ksys_fwcjxx where waibfwma='CI0001' and waibcjma='01']
+[SQLIF][11:19:28,104][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[3][FRWDB]SQL[KsysSvcDefine.ksys_fwcjxx.Entity.selectByIndex_odb_uidx1][{waibcjma=01, waibfwma=CI0001}][0-10000]RowCount=1]
+[INFO ][11:19:28,104][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:188][报文接入--->[REQ][{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1550299884,
+		"idcardno":"481874613146",
+		"addr":"深圳",
+		"custname":"李逍遥"
+	},
+	"sys":{
+		"prcscd":"aplt001"
+	}
+}]]
+[WARN ][11:19:28,113][edsp-thread-1][ ][cn.sunline.ltts.base.constant.ConstantValueManager:35][can't find constant value mappings file: [constant_mappings_extension.properties]]
+[WARN ][11:19:28,115][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[82820681096884118377651978034952]消费端流水[82820681096884118377651978034952]是否为空，所以在此生成默认流水值[82820681096884118377651978034952]以免上送的流水为空]
+[DEBUG][11:19:28,124][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:571][DB-1[BeginTransaction]]
+[SQL  ][11:19:28,128][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select controllerid, modelid, servicename, servicetype, isregistmessage, maxruntimeinms, isreadisland, isrunnable, loglevel, propagation, isregistclientmessage, isnamemapping, timeoutconfirmcount from ksys_service_controller where controllerid='aplt001']
+[SQLIF][11:19:28,129][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[2][FRWDB]SQL[KSysService.ksys_service_controller.Entity.selectByIndex_odbindex1][{controllerid=aplt001}][0-10000]RowCount=0]
+[DEBUG][11:19:28,131][edsp-thread-1][ ][cn.sunline.ltts.plugin.online.facade.OnlineFacade:269][timeout=[0]]
+[INFO ][11:19:28,376][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:101][[RES][{"sys":{"pckgsq":"1517368768132","erortx":"交易成功","erorcd":"AAAAAAAAAA","status":"S"},"output":{"custid":"0001517368768316","busistatus":"normal","custserialnum":"busi1517368768316"},"printer":{}}]]
+[WARN ][11:19:28,378][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[01218894723623057245510978624571]消费端流水[01218894723623057245510978624571]是否为空，所以在此生成默认流水值[01218894723623057245510978624571]以免上送的流水为空]
+[DEBUG][11:22:28,553][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:282][DB-1[getConnection]]
+[SQL  ][11:22:28,559][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select 1]
+[SQL  ][11:22:28,560][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select zxtongbh, waibfwma, waibcjma, ywfwbdid, fuwumosh, txxybzhi, yunxzxbz, neibfwma, miaosxxi, fuwuleix from ksys_fwcjxx where waibfwma='CI0001' and waibcjma='01']
+[SQLIF][11:22:28,563][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[3][FRWDB]SQL[KsysSvcDefine.ksys_fwcjxx.Entity.selectByIndex_odb_uidx1][{waibcjma=01, waibfwma=CI0001}][0-10000]RowCount=1]
+[INFO ][11:22:28,563][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:188][报文接入--->[REQ][{
+	"input":{
+		"busistatus":"normal",
+		"telenum":1550299884,
+		"idcardno":"481874613146",
+		"addr":"深圳",
+		"custname":"李逍遥"
+	},
+	"sys":{
+		"prcscd":"aplt001"
+	}
+}]]
+[WARN ][11:22:28,572][edsp-thread-1][ ][cn.sunline.ltts.base.constant.ConstantValueManager:35][can't find constant value mappings file: [constant_mappings_extension.properties]]
+[WARN ][11:22:28,574][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[77068732094113300814856776817326]消费端流水[77068732094113300814856776817326]是否为空，所以在此生成默认流水值[77068732094113300814856776817326]以免上送的流水为空]
+[DEBUG][11:22:28,583][edsp-thread-1][ ][cn.sunline.ltts.dao.db.LTTSDBConnectionManager:571][DB-1[BeginTransaction]]
+[SQL  ][11:22:28,588][edsp-thread-1][ ][net.sf.log4jdbc.Log4jSpyLogDelegator:241][2. select controllerid, modelid, servicename, servicetype, isregistmessage, maxruntimeinms, isreadisland, isrunnable, loglevel, propagation, isregistclientmessage, isnamemapping, timeoutconfirmcount from ksys_service_controller where controllerid='aplt001']
+[SQLIF][11:22:28,589][edsp-thread-1][ ][cn.sunline.ltts.dao.mybatis.MyBatisSqlProcessor:458][[2][FRWDB]SQL[KSysService.ksys_service_controller.Entity.selectByIndex_odbindex1][{controllerid=aplt001}][0-10000]RowCount=0]
+[DEBUG][11:22:28,590][edsp-thread-1][ ][cn.sunline.ltts.plugin.online.facade.OnlineFacade:269][timeout=[0]]
+[INFO ][11:22:28,803][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:101][[RES][{"sys":{"pckgsq":"1517368948591","erortx":"交易成功","erorcd":"AAAAAAAAAA","status":"S"},"output":{"custid":"0001517368948764","busistatus":"normal","custserialnum":"busi1517368948764"},"printer":{}}]]
+[WARN ][11:22:28,806][edsp-thread-1][ ][cn.sunline.edsp.rpc.plugin.inbound.PlatformRPCHandler:272][该系统参数配置不检查业务流水[68417206355884161160023957431075]消费端流水[68417206355884161160023957431075]是否为空，所以在此生成默认流水值[68417206355884161160023957431075]以免上送的流水为空]
