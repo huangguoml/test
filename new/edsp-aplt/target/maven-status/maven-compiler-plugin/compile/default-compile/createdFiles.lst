@@ -1,7 +1,0 @@
-cn\sun\edsp\plugin\PluginImpl.class
-cn\sunline\edsp\online\callback\IServiceRegistryManagerImpl.class
-cn\sunline\edsp\online\callback\ServiceProcessPointExtensionImpl.class
-cn\sunline\edsp\online\callback\PkgProcessorImpl.class
-cn\sunline\edsp\online\callback\ISubSystemManagerImpl.class
-cn\sunline\edsp\online\callback\EntityDaoProcessCallBackImpl.class
-cn\sunline\edsp\online\callback\TransactionProcessCallbackImpl.class
