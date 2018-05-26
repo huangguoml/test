@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<serviceType id="SaveCustInfo" kind="business" longname="存储客户信息" package="cn.sunline.ltts.busi.online.trans.servicetype" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <service id="createCust" name="addCustomer" longname="添加客户服务">
+        <interface>
+            <input packMode="true">
+                <field id="username" type="BasicType.U_NAMETYPE" required="false" multi="false" array="false" longname="用户名" ref="TDict.onlinedata.username"/>
+                <field id="telphone" type="BasicType.U_TELPHONE" required="false" multi="false" array="false" longname="电话" ref="TDict.onlinedata.telphone"/>
+                <field id="address" type="BasicType.U_ADDRESS" required="false" multi="false" array="false" longname="地址" ref="TDict.onlinedata.address"/>
+            </input>
+            <output asParm="true" packMode="true">
+                <field id="custno" type="BasicType.U_NUMBERTYPE" required="false" multi="false" array="false" longname="客户号" ref="TDict.onlinedata.custno"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="true"/>
+        </interface>
+    </service>
+    <service id="createAcct" name="addAcctInfo" longname="开户服务">
+        <interface>
+            <input packMode="true">
+                <field id="custno" type="BasicType.U_NUMBERTYPE" required="false" multi="false" array="false" longname="客户号" ref="TDict.onlinedata.custno"/>
+            </input>
+            <output asParm="true" packMode="true">
+                <field id="accoutno" type="BasicType.U_NUMBERTYPE" required="false" multi="false" array="false" longname="账户号" ref="TDict.onlinedata.accoutno"/>
+            </output>
+            <property packMode="false"/>
+            <printer packMode="true"/>
+        </interface>
+    </service>
+</serviceType>

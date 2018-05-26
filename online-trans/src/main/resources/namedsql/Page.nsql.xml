@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sqls id="Page" longname="分页测试" package="cn.sunline.ltts.busi.online.trans.namedsql" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dynamicSelect cache="none" method="selectPageWithCount selectPage selectPageWithCount_mds" type="sql" id="selectPageInfo" longname="查询分页测试">
+        <parameterMap class="java.util.Map"/>
+        <resultMap class="OnlineT.kapp_custInfo"/>
+        <dynamicSql type="mysql">
+            <str type="Str"><![CDATA[select username, address, telphone, custno from kapp_custInfo limit 0,3]]></str>
+        </dynamicSql>
+    </dynamicSelect>
+</sqls>

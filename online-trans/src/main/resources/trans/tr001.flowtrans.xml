@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<flowtran id="tr001" longname="交易测试1" kind="create" package="cn.sunline.ltts.busi.online.trans.trans" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <error_prof mappingToProperty="true" serviceName="SaveCustInfo.createCust" id="SaveCustInfo" longname="创建客户">
+        <in_mappings by_interface="true">
+            <mapping src="address" dest="address" by_interface="true" on_top="true"/>
+            <mapping src="telphone" dest="telphone" by_interface="true" on_top="true"/>
+            <mapping src="username" dest="username" by_interface="true" on_top="true"/>
+        </in_mappings>
+        <out_mappings by_interface="true"/>
+    </error_prof>
+    <interface package="cn.sunline.ltts.busi.online.trans.trans.intf">
+        <input packMode="true">
+            <field id="username" type="BasicType.U_NAMETYPE" required="false" multi="false" array="false" longname="用户名" ref="TDict.onlinedata.username"/>
+            <field id="telphone" type="BasicType.U_TELPHONE" required="false" multi="false" array="false" longname="电话" ref="TDict.onlinedata.telphone"/>
+            <field id="address" type="BasicType.U_ADDRESS" required="false" multi="false" array="false" longname="地址" ref="TDict.onlinedata.address"/>
+        </input>
+        <output asParm="true" packMode="true">
+            <field id="custno" type="BasicType.U_NUMBERTYPE" required="false" multi="false" array="false" longname="客户号" ref="TDict.onlinedata.custno"/>
+        </output>
+        <property packMode="true">
+            <field id="custno" type="BasicType.U_NUMBERTYPE" required="false" multi="false" array="false" longname="客户号" ref="TDict.onlinedata.custno"/>
+        </property>
+        <printer packMode="true"/>
+    </interface>
+    <flow>
+        <service mappingToProperty="true" serviceName="SaveCustInfo.createCust" id="SaveCustInfo" longname="存储客户信息">
+            <in_mappings by_interface="true">
+                <mapping src="address" dest="address" by_interface="true" on_top="true"/>
+                <mapping src="telphone" dest="telphone" by_interface="true" on_top="true"/>
+                <mapping src="username" dest="username" by_interface="true" on_top="true"/>
+            </in_mappings>
+            <out_mappings by_interface="true">
+                <mapping src="custno" dest="custno" by_interface="true" on_top="true"/>
+            </out_mappings>
+        </service>
+        <service mappingToProperty="true" serviceName="SaveCustInfo.createAcct" id="SaveCustInfo" longname="账户信息">
+            <in_mappings by_interface="true">
+                <mapping src="custno" dest="custno" by_interface="true" on_top="true"/>
+            </in_mappings>
+            <out_mappings by_interface="true">
+                <mapping src="accoutno" dest="custno" by_interface="true" on_top="true"/>
+            </out_mappings>
+        </service>
+    </flow>
+    <outMapping>
+        <mapping src="custno" dest="custno" by_interface="true" on_top="true"/>
+    </outMapping>
+    <propertyToPrinterMapping/>
+    <outToPrinterMapping/>
+</flowtran>

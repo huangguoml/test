@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="OnlineT" package="cn.sunline.ltts.busi.online.trans.tables" longname="联机表" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <table id="kapp_custInfo" name="kapp_custInfo" longname="客户基本信息表" virtual="false" abstract="false">
+        <fields>
+            <field id="username" longname="用户名" type="BasicType.U_NAMETYPE" ref="TDict.onlinedata.username" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="address" longname="地址" type="BasicType.U_ADDRESS" ref="TDict.onlinedata.address" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="telphone" longname="电话" type="BasicType.U_TELPHONE" ref="TDict.onlinedata.telphone" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+            <field id="custno" longname="客户号" type="BasicType.U_NUMBERTYPE" ref="TDict.onlinedata.custno" primarykey="false" final="false" nullable="true" identity="false" allowSubType="true"/>
+        </fields>
+        <ddls/>
+        <odbindexes>
+            <index id="odb1" type="unique" fields="username address"/>
+        </odbindexes>
+        <indexes>
+            <index id="kapp_custik" type="index" fields="username address telphone">
+                <ddls/>
+            </index>
+        </indexes>
+    </table>
+</schema>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="TDict" package="cn.sunline.ltts.busi.online.trans.dict" longname="测试字典" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <complexType id="onlinedata" longname="联机数据" dict="true" abstract="false" introduct="false">
+        <element id="username" longname="用户名" type="BasicType.U_NAMETYPE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="address" longname="地址" type="BasicType.U_ADDRESS" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="telphone" longname="电话" type="BasicType.U_TELPHONE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="custno" longname="客户号" type="BasicType.U_NUMBERTYPE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+        <element id="accoutno" longname="账户号" type="BasicType.U_NUMBERTYPE" required="false" multi="false" range="false" array="false" final="false" override="false" allowSubType="true"/>
+    </complexType>
+</schema>

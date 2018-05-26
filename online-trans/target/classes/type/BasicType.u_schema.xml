@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema id="BasicType" package="cn.sunline.ltts.busi.online.trans.type" longname="基本限制类型" classgen="normal" xsi:noNamespaceSchemaLocation="ltts-model.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <restrictionType id="U_NAMETYPE" longname="名称" base="string" maxLength="20"/>
+    <restrictionType id="U_TELPHONE" longname="电话" base="string" maxLength="14"/>
+    <restrictionType id="U_ADDRESS" longname="地址" base="string" maxLength="100"/>
+    <restrictionType id="U_NUMBERTYPE" longname="编号类型" base="string" maxLength="20"/>
+</schema>
